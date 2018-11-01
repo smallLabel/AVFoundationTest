@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A2C157218AD5D80066995E /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C156218AD5D80066995E /* test.mp4 */; };
 		B191F1DB2187F25F00B68E06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F1DA2187F25F00B68E06 /* AppDelegate.m */; };
 		B191F1DE2187F25F00B68E06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F1DD2187F25F00B68E06 /* ViewController.m */; };
 		B191F1E12187F25F00B68E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B191F1DF2187F25F00B68E06 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A2C156218AD5D80066995E /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		B191F1D62187F25F00B68E06 /* AVFoundationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B191F1D92187F25F00B68E06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B191F1DA2187F25F00B68E06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		B1DE7DCB2188AC71000A16EB /* AVAsset */ = {
 			isa = PBXGroup;
 			children = (
+				04A2C156218AD5D80066995E /* test.mp4 */,
 				B1DE7DCC2188AC71000A16EB /* AppDelegate.h */,
 				B1DE7DCD2188AC71000A16EB /* AppDelegate.m */,
 				B1DE7DCF2188AC71000A16EB /* ViewController.h */,
@@ -299,6 +302,7 @@
 				B1DE7DD92188AC72000A16EB /* LaunchScreen.storyboard in Resources */,
 				B1DE7DD62188AC72000A16EB /* Assets.xcassets in Resources */,
 				B1DE7DD42188AC71000A16EB /* Main.storyboard in Resources */,
+				04A2C157218AD5D80066995E /* test.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
