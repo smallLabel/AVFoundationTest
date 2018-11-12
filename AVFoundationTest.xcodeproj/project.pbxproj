@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04A2C157218AD5D80066995E /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C156218AD5D80066995E /* test.mp4 */; };
+		041A8DC2219924E6005FDD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8DC1219924E6005FDD2A /* AppDelegate.m */; };
+		041A8DC5219924E6005FDD2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8DC4219924E6005FDD2A /* ViewController.m */; };
+		041A8DC8219924E6005FDD2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041A8DC6219924E6005FDD2A /* Main.storyboard */; };
+		041A8DCA219924E9005FDD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041A8DC9219924E9005FDD2A /* Assets.xcassets */; };
+		041A8DCD219924E9005FDD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041A8DCB219924E9005FDD2A /* LaunchScreen.storyboard */; };
+		041A8DD0219924E9005FDD2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8DCF219924E9005FDD2A /* main.m */; };
+		041A8DD421992596005FDD2A /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C158218AED6B0066995E /* test.mov */; };
+		041A8DD721992BCA005FDD2A /* SLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8DD621992BCA005FDD2A /* SLPlayerView.m */; };
+		04A2C159218AED6B0066995E /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C158218AED6B0066995E /* test.mov */; };
 		B191F1DB2187F25F00B68E06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F1DA2187F25F00B68E06 /* AppDelegate.m */; };
 		B191F1DE2187F25F00B68E06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F1DD2187F25F00B68E06 /* ViewController.m */; };
 		B191F1E12187F25F00B68E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B191F1DF2187F25F00B68E06 /* Main.storyboard */; };
@@ -33,7 +41,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04A2C156218AD5D80066995E /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		041A8DBE219924E6005FDD2A /* AVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041A8DC0219924E6005FDD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		041A8DC1219924E6005FDD2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		041A8DC3219924E6005FDD2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		041A8DC4219924E6005FDD2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		041A8DC7219924E6005FDD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041A8DC9219924E9005FDD2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041A8DCC219924E9005FDD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041A8DCE219924E9005FDD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041A8DCF219924E9005FDD2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041A8DD521992BCA005FDD2A /* SLPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPlayerView.h; sourceTree = "<group>"; };
+		041A8DD621992BCA005FDD2A /* SLPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLPlayerView.m; sourceTree = "<group>"; };
+		04A2C158218AED6B0066995E /* test.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.mov; sourceTree = "<group>"; };
 		B191F1D62187F25F00B68E06 /* AVFoundationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B191F1D92187F25F00B68E06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B191F1DA2187F25F00B68E06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		041A8DBB219924E6005FDD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B191F1D32187F25F00B68E06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,12 +122,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041A8DBF219924E6005FDD2A /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				041A8DC0219924E6005FDD2A /* AppDelegate.h */,
+				041A8DC1219924E6005FDD2A /* AppDelegate.m */,
+				041A8DC3219924E6005FDD2A /* ViewController.h */,
+				041A8DC4219924E6005FDD2A /* ViewController.m */,
+				041A8DD521992BCA005FDD2A /* SLPlayerView.h */,
+				041A8DD621992BCA005FDD2A /* SLPlayerView.m */,
+				041A8DC6219924E6005FDD2A /* Main.storyboard */,
+				041A8DC9219924E9005FDD2A /* Assets.xcassets */,
+				041A8DCB219924E9005FDD2A /* LaunchScreen.storyboard */,
+				041A8DCE219924E9005FDD2A /* Info.plist */,
+				041A8DCF219924E9005FDD2A /* main.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		B191F1CD2187F25F00B68E06 = {
 			isa = PBXGroup;
 			children = (
 				B191F1D82187F25F00B68E06 /* AVFoundationTest */,
 				B191F1F42188000100B68E06 /* Audio */,
 				B1DE7DCB2188AC71000A16EB /* AVAsset */,
+				041A8DBF219924E6005FDD2A /* AVPlayer */,
 				B191F1D72187F25F00B68E06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +157,7 @@
 				B191F1D62187F25F00B68E06 /* AVFoundationTest.app */,
 				B191F1F32188000100B68E06 /* Audio.app */,
 				B1DE7DCA2188AC71000A16EB /* AVAsset.app */,
+				041A8DBE219924E6005FDD2A /* AVPlayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +209,7 @@
 		B1DE7DCB2188AC71000A16EB /* AVAsset */ = {
 			isa = PBXGroup;
 			children = (
-				04A2C156218AD5D80066995E /* test.mp4 */,
+				04A2C158218AED6B0066995E /* test.mov */,
 				B1DE7DCC2188AC71000A16EB /* AppDelegate.h */,
 				B1DE7DCD2188AC71000A16EB /* AppDelegate.m */,
 				B1DE7DCF2188AC71000A16EB /* ViewController.h */,
@@ -179,6 +226,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		041A8DBD219924E6005FDD2A /* AVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041A8DD3219924E9005FDD2A /* Build configuration list for PBXNativeTarget "AVPlayer" */;
+			buildPhases = (
+				041A8DBA219924E6005FDD2A /* Sources */,
+				041A8DBB219924E6005FDD2A /* Frameworks */,
+				041A8DBC219924E6005FDD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVPlayer;
+			productName = AVPlayer;
+			productReference = 041A8DBE219924E6005FDD2A /* AVPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B191F1D52187F25F00B68E06 /* AVFoundationTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B191F1EC2187F26000B68E06 /* Build configuration list for PBXNativeTarget "AVFoundationTest" */;
@@ -239,6 +303,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = FengMap;
 				TargetAttributes = {
+					041A8DBD219924E6005FDD2A = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					B191F1D52187F25F00B68E06 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -266,11 +333,23 @@
 				B191F1D52187F25F00B68E06 /* AVFoundationTest */,
 				B191F1F22188000100B68E06 /* Audio */,
 				B1DE7DC92188AC71000A16EB /* AVAsset */,
+				041A8DBD219924E6005FDD2A /* AVPlayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		041A8DBC219924E6005FDD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041A8DD421992596005FDD2A /* test.mov in Resources */,
+				041A8DCD219924E9005FDD2A /* LaunchScreen.storyboard in Resources */,
+				041A8DCA219924E9005FDD2A /* Assets.xcassets in Resources */,
+				041A8DC8219924E6005FDD2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B191F1D42187F25F00B68E06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,16 +378,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A2C159218AED6B0066995E /* test.mov in Resources */,
 				B1DE7DD92188AC72000A16EB /* LaunchScreen.storyboard in Resources */,
 				B1DE7DD62188AC72000A16EB /* Assets.xcassets in Resources */,
 				B1DE7DD42188AC71000A16EB /* Main.storyboard in Resources */,
-				04A2C157218AD5D80066995E /* test.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		041A8DBA219924E6005FDD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041A8DD721992BCA005FDD2A /* SLPlayerView.m in Sources */,
+				041A8DC5219924E6005FDD2A /* ViewController.m in Sources */,
+				041A8DD0219924E9005FDD2A /* main.m in Sources */,
+				041A8DC2219924E6005FDD2A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B191F1D22187F25F00B68E06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +432,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		041A8DC6219924E6005FDD2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041A8DC7219924E6005FDD2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041A8DCB219924E9005FDD2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041A8DCC219924E9005FDD2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		B191F1DF2187F25F00B68E06 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -393,6 +499,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		041A8DD1219924E9005FDD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.AVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041A8DD2219924E9005FDD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.AVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B191F1EA2187F26000B68E06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -612,6 +750,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		041A8DD3219924E9005FDD2A /* Build configuration list for PBXNativeTarget "AVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041A8DD1219924E9005FDD2A /* Debug */,
+				041A8DD2219924E9005FDD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B191F1D12187F25F00B68E06 /* Build configuration list for PBXProject "AVFoundationTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
