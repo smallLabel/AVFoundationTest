@@ -15,6 +15,12 @@
 		041A8DD0219924E9005FDD2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8DCF219924E9005FDD2A /* main.m */; };
 		041A8DD421992596005FDD2A /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C158218AED6B0066995E /* test.mov */; };
 		041A8DD721992BCA005FDD2A /* SLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8DD621992BCA005FDD2A /* SLPlayerView.m */; };
+		049C91DD219A842500274BC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C91DC219A842500274BC2 /* AppDelegate.m */; };
+		049C91E0219A842500274BC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C91DF219A842500274BC2 /* ViewController.m */; };
+		049C91E3219A842500274BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049C91E1219A842500274BC2 /* Main.storyboard */; };
+		049C91E5219A842B00274BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049C91E4219A842B00274BC2 /* Assets.xcassets */; };
+		049C91E8219A842B00274BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049C91E6219A842B00274BC2 /* LaunchScreen.storyboard */; };
+		049C91EB219A842B00274BC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C91EA219A842B00274BC2 /* main.m */; };
 		04A2C159218AED6B0066995E /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C158218AED6B0066995E /* test.mov */; };
 		B191F1DB2187F25F00B68E06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F1DA2187F25F00B68E06 /* AppDelegate.m */; };
 		B191F1DE2187F25F00B68E06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F1DD2187F25F00B68E06 /* ViewController.m */; };
@@ -53,6 +59,16 @@
 		041A8DCF219924E9005FDD2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		041A8DD521992BCA005FDD2A /* SLPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPlayerView.h; sourceTree = "<group>"; };
 		041A8DD621992BCA005FDD2A /* SLPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLPlayerView.m; sourceTree = "<group>"; };
+		049C91D9219A842500274BC2 /* AVCaptureDevice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureDevice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049C91DB219A842500274BC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		049C91DC219A842500274BC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		049C91DE219A842500274BC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		049C91DF219A842500274BC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		049C91E2219A842500274BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		049C91E4219A842B00274BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049C91E7219A842B00274BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		049C91E9219A842B00274BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049C91EA219A842B00274BC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04A2C158218AED6B0066995E /* test.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.mov; sourceTree = "<group>"; };
 		B191F1D62187F25F00B68E06 /* AVFoundationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B191F1D92187F25F00B68E06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +108,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		041A8DBB219924E6005FDD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049C91D6219A842500274BC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -140,6 +163,22 @@
 			path = AVPlayer;
 			sourceTree = "<group>";
 		};
+		049C91DA219A842500274BC2 /* AVCaptureDevice */ = {
+			isa = PBXGroup;
+			children = (
+				049C91DB219A842500274BC2 /* AppDelegate.h */,
+				049C91DC219A842500274BC2 /* AppDelegate.m */,
+				049C91DE219A842500274BC2 /* ViewController.h */,
+				049C91DF219A842500274BC2 /* ViewController.m */,
+				049C91E1219A842500274BC2 /* Main.storyboard */,
+				049C91E4219A842B00274BC2 /* Assets.xcassets */,
+				049C91E6219A842B00274BC2 /* LaunchScreen.storyboard */,
+				049C91E9219A842B00274BC2 /* Info.plist */,
+				049C91EA219A842B00274BC2 /* main.m */,
+			);
+			path = AVCaptureDevice;
+			sourceTree = "<group>";
+		};
 		B191F1CD2187F25F00B68E06 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +186,7 @@
 				B191F1F42188000100B68E06 /* Audio */,
 				B1DE7DCB2188AC71000A16EB /* AVAsset */,
 				041A8DBF219924E6005FDD2A /* AVPlayer */,
+				049C91DA219A842500274BC2 /* AVCaptureDevice */,
 				B191F1D72187F25F00B68E06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,6 +198,7 @@
 				B191F1F32188000100B68E06 /* Audio.app */,
 				B1DE7DCA2188AC71000A16EB /* AVAsset.app */,
 				041A8DBE219924E6005FDD2A /* AVPlayer.app */,
+				049C91D9219A842500274BC2 /* AVCaptureDevice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +284,23 @@
 			productReference = 041A8DBE219924E6005FDD2A /* AVPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		049C91D8219A842500274BC2 /* AVCaptureDevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049C91EE219A842B00274BC2 /* Build configuration list for PBXNativeTarget "AVCaptureDevice" */;
+			buildPhases = (
+				049C91D5219A842500274BC2 /* Sources */,
+				049C91D6219A842500274BC2 /* Frameworks */,
+				049C91D7219A842500274BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVCaptureDevice;
+			productName = AVCaptureDevice;
+			productReference = 049C91D9219A842500274BC2 /* AVCaptureDevice.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B191F1D52187F25F00B68E06 /* AVFoundationTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B191F1EC2187F26000B68E06 /* Build configuration list for PBXNativeTarget "AVFoundationTest" */;
@@ -306,6 +364,9 @@
 					041A8DBD219924E6005FDD2A = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					049C91D8219A842500274BC2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					B191F1D52187F25F00B68E06 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -334,6 +395,7 @@
 				B191F1F22188000100B68E06 /* Audio */,
 				B1DE7DC92188AC71000A16EB /* AVAsset */,
 				041A8DBD219924E6005FDD2A /* AVPlayer */,
+				049C91D8219A842500274BC2 /* AVCaptureDevice */,
 			);
 		};
 /* End PBXProject section */
@@ -347,6 +409,16 @@
 				041A8DCD219924E9005FDD2A /* LaunchScreen.storyboard in Resources */,
 				041A8DCA219924E9005FDD2A /* Assets.xcassets in Resources */,
 				041A8DC8219924E6005FDD2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049C91D7219A842500274BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049C91E8219A842B00274BC2 /* LaunchScreen.storyboard in Resources */,
+				049C91E5219A842B00274BC2 /* Assets.xcassets in Resources */,
+				049C91E3219A842500274BC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +471,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		049C91D5219A842500274BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049C91E0219A842500274BC2 /* ViewController.m in Sources */,
+				049C91EB219A842B00274BC2 /* main.m in Sources */,
+				049C91DD219A842500274BC2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B191F1D22187F25F00B68E06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +526,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				041A8DCC219924E9005FDD2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		049C91E1219A842500274BC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049C91E2219A842500274BC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		049C91E6219A842B00274BC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049C91E7219A842B00274BC2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -526,6 +624,38 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.AVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		049C91EC219A842B00274BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVCaptureDevice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.AVCaptureDevice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		049C91ED219A842B00274BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVCaptureDevice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.AVCaptureDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -755,6 +885,15 @@
 			buildConfigurations = (
 				041A8DD1219924E9005FDD2A /* Debug */,
 				041A8DD2219924E9005FDD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049C91EE219A842B00274BC2 /* Build configuration list for PBXNativeTarget "AVCaptureDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049C91EC219A842B00274BC2 /* Debug */,
+				049C91ED219A842B00274BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

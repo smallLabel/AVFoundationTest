@@ -22,19 +22,31 @@ static const NSString *PlayerItemStatusContext;
     [super viewDidLoad];
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"mov"];
     AVAsset *asset = [AVAsset assetWithURL:url];
-    AVPlayerItem *playItem = [[AVPlayerItem alloc] initWithAsset:asset];
+    NSArray *keys = @[
+                      @"tracks",
+                      @"duration",
+                      @"commonMetadata",
+                      @"availableMediaCharacteristicsWithMediaSelectionOptions"
+                      ];
+    AVPlayerItem *playItem = [[AVPlayerItem alloc] initWithAsset:asset automaticallyLoadedAssetKeys:keys];
     AVPlayer *player = [[AVPlayer alloc] initWithPlayerItem:playItem];
-    [player addPeriodicTimeObserverForInterval:kCMTimeZero queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-        
+//    [player addPeriodicTimeObserverForInterval:kCMTimeZero queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+//        
+//    }];
+    [asset loadValuesAsynchronouslyForKeys:@[@"availableMediaCharacteristicsWithMediaSelectionOptions"] completionHandler:^{
+        NSArray *options = asset.availableMediaCharacteristicsWithMediaSelectionOptions;
+        for (NSString *content in options) {
+            NSLog(@"%@", content);
+        }
     }];
     
-    AVAssetImageGenerator
     
     self.player = player;
     AVPlayerLayer *playLayer = [AVPlayerLayer playerLayerWithPlayer:player];
     playLayer.frame = self.view.bounds;
     [self.view.layer addSublayer:playLayer];
-    
+
+
     [playItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:&PlayerItemStatusContext];
 }
 
