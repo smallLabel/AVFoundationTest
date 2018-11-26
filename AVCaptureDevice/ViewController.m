@@ -9,15 +9,17 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController () <AVCapturePhotoCaptureDelegate>
+@interface ViewController () <AVCapturePhotoCaptureDelegate, AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureDeviceInput *input;
 @property (nonatomic, strong) AVCapturePhotoOutput *output;
-@property (nonatomic, strong) AVCaptureMovieFileOutput *videoOutput;
+@property (nonatomic, strong) AVCaptureMovieFileOutput *movieOutput;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *layer;
+@property (nonatomic, strong) AVCaptureMetadataOutput *metadataOutput;
+@property (nonatomic, strong) AVCaptureVideoDataOutput *videoOutput;
 @property (nonatomic, strong) AVCaptureDevice *device;
-
+@property (nonatomic, strong) UILabel *label;
 @end
 
 @implementation ViewController
@@ -31,30 +33,50 @@
     
 //    AVCaptureDeviceDiscoverySession *discoverySession = [AVCaptureDeviceDiscoverySession discoverySessionWithDeviceTypes:@[AVCaptureDeviceTypeBuiltInWideAngleCamera] mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
 //    NSArray<AVCaptureDevice *> *devices = discoverySession.devices;
-    
+    if ([_device isAutoFocusRangeRestrictionSupported]) {
+        NSError *error;
+        [_device lockForConfiguration:&error];
+        _device.autoFocusRangeRestriction = AVCaptureAutoFocusRangeRestrictionNear;
+        [_device unlockForConfiguration];
+    }
     
     if ([self.session canAddInput:_input]) {
         [_session addInput:_input];
     }
-    
     
     _output = [[AVCapturePhotoOutput alloc] init];
     if ([_session canAddOutput:_output]) {
         [_session addOutput:_output];
     }
     
-    _videoOutput = [[AVCaptureMovieFileOutput alloc] init];
+    _videoOutput = [[AVCaptureVideoDataOutput alloc] init];
     if ([self.session canAddOutput:_videoOutput]) {
         [self.session addOutput:_videoOutput];
+        
+        [_videoOutput setSampleBufferDelegate:self queue:dispatch_get_main_queue()];
+    }
+    
+    _metadataOutput = [[AVCaptureMetadataOutput alloc] init];
+    if ([self.session canAddOutput:_metadataOutput]) {
+        [self.session addOutput:_metadataOutput];
+        _metadataOutput.metadataObjectTypes = @[AVMetadataObjectTypeFace, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeQRCode];
+        [_metadataOutput setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
+    }
+    
+    _movieOutput = [[AVCaptureMovieFileOutput alloc] init];
+    if ([self.session canAddOutput:_movieOutput]) {
+//        [self.session addOutput:_movieOutput];
     }
     
     _layer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
     _layer.frame = self.view.bounds;
     [self.view.layer addSublayer:_layer];
     
-    
     //启动捕捉
     [self.session startRunning];
+
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 30, CGRectGetWidth(self.view.bounds), 30)];
+    [self.view addSubview:_label];
 
 }
 
@@ -123,8 +145,6 @@
     [self.session commitConfiguration];
 }
 
-
-
 - (void)captureOutput:(AVCapturePhotoOutput *)output didFinishProcessingPhoto:(AVCapturePhoto *)photo error:(NSError *)error  API_AVAILABLE(ios(11.0)){
     if (@available(iOS 11.0, *)) {
         NSData *data = [photo fileDataRepresentation];
@@ -134,10 +154,76 @@
 }
 
 - (void)captureOutput:(AVCapturePhotoOutput *)output didFinishProcessingPhotoSampleBuffer:(CMSampleBufferRef)photoSampleBuffer previewPhotoSampleBuffer:(CMSampleBufferRef)previewPhotoSampleBuffer resolvedSettings:(AVCaptureResolvedPhotoSettings *)resolvedSettings bracketSettings:(AVCaptureBracketedStillImageSettings *)bracketSettings error:(NSError *)error {
+    
     NSData *data = [AVCapturePhotoOutput JPEGPhotoDataRepresentationForJPEGSampleBuffer:photoSampleBuffer previewPhotoSampleBuffer:previewPhotoSampleBuffer];
     UIImage *image = [UIImage imageWithData:data];
     UIImageWriteToSavedPhotosAlbum(image, self, nil, nil);
 }
+
+- (void)captureOutput:(AVCaptureOutput *)output didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
+//    CVPixelBufferRef buffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+    
+    CMFormatDescriptionRef formatDescription = CMSampleBufferGetFormatDescription(sampleBuffer);
+    CMMediaType type = CMFormatDescriptionGetMediaType(formatDescription);
+    CFDictionaryRef info = (CFDictionaryRef)CMGetAttachment(sampleBuffer, kCGImagePropertyExifDictionary, NULL);
+    NSLog(@"%@", info);
+        
+    if (type == kCMMediaType_Video) {
+        NSLog(@"video");
+    }
+    
+//    CVPixelBufferLockBaseAddress(buffer, 0);
+//
+//    size_t width = CVPixelBufferGetWidth(buffer);
+//    size_t height = CVPixelBufferGetHeight(buffer);
+//    unsigned char *pixel = (unsigned char *)CVPixelBufferGetBaseAddress(buffer);
+//    unsigned char grayPixel;
+//
+//    for (int i = 0; i< height; i++) {
+//        for (int j = 0; j<width; j++) {
+//            grayPixel = (pixel[0] + pixel[1] + pixel[2]) / 3;
+//            pixel[0] = pixel[1] = pixel[2] = grayPixel;
+//            pixel += 4;
+//        }
+//    }
+//    CVPixelBufferUnlockBaseAddress(buffer, 0);
+}
+
+- (void)captureOutput:(AVCaptureOutput *)output didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
+    NSLog(@"丢帧");
+    CVPixelBufferRef buffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+    
+//    CVPixelBufferLockBaseAddress(buffer, 0);
+//
+//    size_t width = CVPixelBufferGetWidth(buffer);
+//    size_t height = CVPixelBufferGetHeight(buffer);
+//    unsigned char *pixel = (unsigned char *)CVPixelBufferGetBaseAddress(buffer);
+//    unsigned char grayPixel;
+//
+//    for (int i = 0; i< height; i++) {
+//        for (int j = 0; j<width; j++) {
+//            grayPixel = (pixel[0] + pixel[1] + pixel[2]) / 3;
+//            pixel[0] = pixel[1] = pixel[2] = grayPixel;
+//            pixel += 4;
+//        }
+//    }
+//    CVPixelBufferUnlockBaseAddress(buffer, 0);
+}
+
+//人脸识别的回调
+- (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    
+//    for (AVMetadataFaceObject *face in metadataObjects) {                   // 2
+//        NSLog(@"Face detected with ID: %li", (long)face.faceID);
+//        NSLog(@"Face bounds: %@", NSStringFromCGRect(face.bounds));
+//    }
+//    for (AVMetadataMachineReadableCodeObject *obj in metadataObjects) {
+//        NSLog(@"%@", obj.stringValue);
+//        _label.text = obj.stringValue;
+//    }
+    
+}
+
 
 @end
 
