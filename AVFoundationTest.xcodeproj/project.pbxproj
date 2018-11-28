@@ -45,6 +45,13 @@
 		B1DE7DD62188AC72000A16EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DE7DD52188AC72000A16EB /* Assets.xcassets */; };
 		B1DE7DD92188AC72000A16EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DE7DD72188AC72000A16EB /* LaunchScreen.storyboard */; };
 		B1DE7DDC2188AC72000A16EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE7DDB2188AC72000A16EB /* main.m */; };
+		E931DEA321AED756002E8303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E931DEA221AED756002E8303 /* AppDelegate.m */; };
+		E931DEA621AED756002E8303 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E931DEA521AED756002E8303 /* ViewController.m */; };
+		E931DEA921AED756002E8303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E931DEA721AED756002E8303 /* Main.storyboard */; };
+		E931DEAB21AED758002E8303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E931DEAA21AED758002E8303 /* Assets.xcassets */; };
+		E931DEAE21AED758002E8303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E931DEAC21AED758002E8303 /* LaunchScreen.storyboard */; };
+		E931DEB121AED758002E8303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E931DEB021AED758002E8303 /* main.m */; };
+		E931DEB521AEE005002E8303 /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C158218AED6B0066995E /* test.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +114,16 @@
 		B1DE7DD82188AC72000A16EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1DE7DDA2188AC72000A16EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1DE7DDB2188AC72000A16EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E931DE9F21AED756002E8303 /* 读取和写入媒体.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "读取和写入媒体.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E931DEA121AED756002E8303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E931DEA221AED756002E8303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E931DEA421AED756002E8303 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E931DEA521AED756002E8303 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E931DEA821AED756002E8303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E931DEAA21AED758002E8303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E931DEAD21AED758002E8303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E931DEAF21AED758002E8303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E931DEB021AED758002E8303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +156,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B1DE7DC72188AC71000A16EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E931DE9C21AED756002E8303 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,6 +216,7 @@
 				B1DE7DCB2188AC71000A16EB /* AVAsset */,
 				041A8DBF219924E6005FDD2A /* AVPlayer */,
 				049C91DA219A842500274BC2 /* AVCaptureDevice */,
+				E931DEA021AED756002E8303 /* 读取和写入媒体 */,
 				B191F1D72187F25F00B68E06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -204,6 +229,7 @@
 				B1DE7DCA2188AC71000A16EB /* AVAsset.app */,
 				041A8DBE219924E6005FDD2A /* AVPlayer.app */,
 				049C91D9219A842500274BC2 /* AVCaptureDevice.app */,
+				E931DE9F21AED756002E8303 /* 读取和写入媒体.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,6 +293,22 @@
 				B1DE7DDB2188AC72000A16EB /* main.m */,
 			);
 			path = AVAsset;
+			sourceTree = "<group>";
+		};
+		E931DEA021AED756002E8303 /* 读取和写入媒体 */ = {
+			isa = PBXGroup;
+			children = (
+				E931DEA121AED756002E8303 /* AppDelegate.h */,
+				E931DEA221AED756002E8303 /* AppDelegate.m */,
+				E931DEA421AED756002E8303 /* ViewController.h */,
+				E931DEA521AED756002E8303 /* ViewController.m */,
+				E931DEA721AED756002E8303 /* Main.storyboard */,
+				E931DEAA21AED758002E8303 /* Assets.xcassets */,
+				E931DEAC21AED758002E8303 /* LaunchScreen.storyboard */,
+				E931DEAF21AED758002E8303 /* Info.plist */,
+				E931DEB021AED758002E8303 /* main.m */,
+			);
+			path = "读取和写入媒体";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +399,23 @@
 			productReference = B1DE7DCA2188AC71000A16EB /* AVAsset.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E931DE9E21AED756002E8303 /* 读取和写入媒体 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E931DEB421AED758002E8303 /* Build configuration list for PBXNativeTarget "读取和写入媒体" */;
+			buildPhases = (
+				E931DE9B21AED756002E8303 /* Sources */,
+				E931DE9C21AED756002E8303 /* Frameworks */,
+				E931DE9D21AED756002E8303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "读取和写入媒体";
+			productName = "读取和写入媒体";
+			productReference = E931DE9F21AED756002E8303 /* 读取和写入媒体.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -381,6 +440,9 @@
 					B1DE7DC92188AC71000A16EB = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					E931DE9E21AED756002E8303 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = B191F1D12187F25F00B68E06 /* Build configuration list for PBXProject "AVFoundationTest" */;
@@ -401,6 +463,7 @@
 				B1DE7DC92188AC71000A16EB /* AVAsset */,
 				041A8DBD219924E6005FDD2A /* AVPlayer */,
 				049C91D8219A842500274BC2 /* AVCaptureDevice */,
+				E931DE9E21AED756002E8303 /* 读取和写入媒体 */,
 			);
 		};
 /* End PBXProject section */
@@ -462,6 +525,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E931DE9D21AED756002E8303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E931DEB521AEE005002E8303 /* test.mov in Resources */,
+				E931DEAE21AED758002E8303 /* LaunchScreen.storyboard in Resources */,
+				E931DEAB21AED758002E8303 /* Assets.xcassets in Resources */,
+				E931DEA921AED756002E8303 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -514,6 +588,16 @@
 				B1DE7DD12188AC71000A16EB /* ViewController.m in Sources */,
 				B1DE7DDC2188AC72000A16EB /* main.m in Sources */,
 				B1DE7DCE2188AC71000A16EB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E931DE9B21AED756002E8303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E931DEA621AED756002E8303 /* ViewController.m in Sources */,
+				E931DEB121AED758002E8303 /* main.m in Sources */,
+				E931DEA321AED756002E8303 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +680,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				B1DE7DD82188AC72000A16EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E931DEA721AED756002E8303 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E931DEA821AED756002E8303 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E931DEAC21AED758002E8303 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E931DEAD21AED758002E8303 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -887,6 +987,40 @@
 			};
 			name = Release;
 		};
+		E931DEB221AED758002E8303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWZ8Q938XQ;
+				INFOPLIST_FILE = "读取和写入媒体/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "smallLabel.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E931DEB321AED758002E8303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWZ8Q938XQ;
+				INFOPLIST_FILE = "读取和写入媒体/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "smallLabel.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -940,6 +1074,15 @@
 			buildConfigurations = (
 				B1DE7DDD2188AC72000A16EB /* Debug */,
 				B1DE7DDE2188AC72000A16EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E931DEB421AED758002E8303 /* Build configuration list for PBXNativeTarget "读取和写入媒体" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E931DEB221AED758002E8303 /* Debug */,
+				E931DEB321AED758002E8303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
