@@ -40,6 +40,8 @@
         [_device unlockForConfiguration];
     }
     
+    self.session.sessionPreset = AVCaptureSessionPreset640x480;
+    
     if ([self.session canAddInput:_input]) {
         [_session addInput:_input];
     }
@@ -52,7 +54,7 @@
     _videoOutput = [[AVCaptureVideoDataOutput alloc] init];
     if ([self.session canAddOutput:_videoOutput]) {
         [self.session addOutput:_videoOutput];
-        
+        _videoOutput.videoSettings = @{(id)kCVPixelBufferPixelFormatTypeKey: @(kCVPixelFormatType_32BGRA)};
         [_videoOutput setSampleBufferDelegate:self queue:dispatch_get_main_queue()];
     }
     

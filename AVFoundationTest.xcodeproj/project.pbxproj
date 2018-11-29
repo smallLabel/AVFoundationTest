@@ -16,6 +16,7 @@
 		041A8DD421992596005FDD2A /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C158218AED6B0066995E /* test.mov */; };
 		041A8DD721992BCA005FDD2A /* SLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8DD621992BCA005FDD2A /* SLPlayerView.m */; };
 		0477D5B221A2AD0B00D0FF59 /* TestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477D5B121A2AD0B00D0FF59 /* TestButton.m */; };
+		04887B9721AFC9AB009CF9D9 /* SLSampleDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04887B9621AFC9AB009CF9D9 /* SLSampleDataProvider.m */; };
 		049C91DD219A842500274BC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C91DC219A842500274BC2 /* AppDelegate.m */; };
 		049C91E0219A842500274BC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C91DF219A842500274BC2 /* ViewController.m */; };
 		049C91E3219A842500274BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049C91E1219A842500274BC2 /* Main.storyboard */; };
@@ -69,6 +70,8 @@
 		041A8DD621992BCA005FDD2A /* SLPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLPlayerView.m; sourceTree = "<group>"; };
 		0477D5B021A2AD0B00D0FF59 /* TestButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestButton.h; sourceTree = "<group>"; };
 		0477D5B121A2AD0B00D0FF59 /* TestButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestButton.m; sourceTree = "<group>"; };
+		04887B9521AFC9AB009CF9D9 /* SLSampleDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLSampleDataProvider.h; sourceTree = "<group>"; };
+		04887B9621AFC9AB009CF9D9 /* SLSampleDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLSampleDataProvider.m; sourceTree = "<group>"; };
 		049C91D9219A842500274BC2 /* AVCaptureDevice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureDevice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049C91DB219A842500274BC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		049C91DC219A842500274BC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				E931DEA221AED756002E8303 /* AppDelegate.m */,
 				E931DEA421AED756002E8303 /* ViewController.h */,
 				E931DEA521AED756002E8303 /* ViewController.m */,
+				04887B9521AFC9AB009CF9D9 /* SLSampleDataProvider.h */,
+				04887B9621AFC9AB009CF9D9 /* SLSampleDataProvider.m */,
 				E931DEA721AED756002E8303 /* Main.storyboard */,
 				E931DEAA21AED758002E8303 /* Assets.xcassets */,
 				E931DEAC21AED758002E8303 /* LaunchScreen.storyboard */,
@@ -598,6 +603,7 @@
 				E931DEA621AED756002E8303 /* ViewController.m in Sources */,
 				E931DEB121AED758002E8303 /* main.m in Sources */,
 				E931DEA321AED756002E8303 /* AppDelegate.m in Sources */,
+				04887B9721AFC9AB009CF9D9 /* SLSampleDataProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
