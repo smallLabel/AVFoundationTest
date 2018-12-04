@@ -79,7 +79,6 @@
 
     _label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 30, CGRectGetWidth(self.view.bounds), 30)];
     [self.view addSubview:_label];
-
 }
 
 //切换

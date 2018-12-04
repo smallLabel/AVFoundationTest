@@ -46,6 +46,14 @@
 		B1DE7DD62188AC72000A16EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DE7DD52188AC72000A16EB /* Assets.xcassets */; };
 		B1DE7DD92188AC72000A16EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DE7DD72188AC72000A16EB /* LaunchScreen.storyboard */; };
 		B1DE7DDC2188AC72000A16EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE7DDB2188AC72000A16EB /* main.m */; };
+		E93102BE21B3E3E00071D7DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E93102BD21B3E3E00071D7DF /* AppDelegate.m */; };
+		E93102C121B3E3E00071D7DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93102C021B3E3E00071D7DF /* ViewController.m */; };
+		E93102C421B3E3E00071D7DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93102C221B3E3E00071D7DF /* Main.storyboard */; };
+		E93102C621B3E3E10071D7DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93102C521B3E3E10071D7DF /* Assets.xcassets */; };
+		E93102C921B3E3E10071D7DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93102C721B3E3E10071D7DF /* LaunchScreen.storyboard */; };
+		E93102CC21B3E3E10071D7DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E93102CB21B3E3E10071D7DF /* main.m */; };
+		E93102D021B3E5010071D7DF /* awake.wav in Resources */ = {isa = PBXBuildFile; fileRef = B19B7FC22188077E0072E5AD /* awake.wav */; };
+		E93102D121B3E5010071D7DF /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C158218AED6B0066995E /* test.mov */; };
 		E931DEA321AED756002E8303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E931DEA221AED756002E8303 /* AppDelegate.m */; };
 		E931DEA621AED756002E8303 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E931DEA521AED756002E8303 /* ViewController.m */; };
 		E931DEA921AED756002E8303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E931DEA721AED756002E8303 /* Main.storyboard */; };
@@ -117,6 +125,16 @@
 		B1DE7DD82188AC72000A16EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1DE7DDA2188AC72000A16EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1DE7DDB2188AC72000A16EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E93102BA21B3E3E00071D7DF /* 媒体组合.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "媒体组合.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E93102BC21B3E3E00071D7DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E93102BD21B3E3E00071D7DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E93102BF21B3E3E00071D7DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E93102C021B3E3E00071D7DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E93102C321B3E3E00071D7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E93102C521B3E3E10071D7DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E93102C821B3E3E10071D7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E93102CA21B3E3E10071D7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E93102CB21B3E3E10071D7DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E931DE9F21AED756002E8303 /* 读取和写入媒体.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "读取和写入媒体.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E931DEA121AED756002E8303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E931DEA221AED756002E8303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,6 +177,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B1DE7DC72188AC71000A16EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93102B721B3E3E00071D7DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,6 +245,7 @@
 				041A8DBF219924E6005FDD2A /* AVPlayer */,
 				049C91DA219A842500274BC2 /* AVCaptureDevice */,
 				E931DEA021AED756002E8303 /* 读取和写入媒体 */,
+				E93102BB21B3E3E00071D7DF /* 媒体组合 */,
 				B191F1D72187F25F00B68E06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -233,6 +259,7 @@
 				041A8DBE219924E6005FDD2A /* AVPlayer.app */,
 				049C91D9219A842500274BC2 /* AVCaptureDevice.app */,
 				E931DE9F21AED756002E8303 /* 读取和写入媒体.app */,
+				E93102BA21B3E3E00071D7DF /* 媒体组合.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,6 +323,22 @@
 				B1DE7DDB2188AC72000A16EB /* main.m */,
 			);
 			path = AVAsset;
+			sourceTree = "<group>";
+		};
+		E93102BB21B3E3E00071D7DF /* 媒体组合 */ = {
+			isa = PBXGroup;
+			children = (
+				E93102BC21B3E3E00071D7DF /* AppDelegate.h */,
+				E93102BD21B3E3E00071D7DF /* AppDelegate.m */,
+				E93102BF21B3E3E00071D7DF /* ViewController.h */,
+				E93102C021B3E3E00071D7DF /* ViewController.m */,
+				E93102C221B3E3E00071D7DF /* Main.storyboard */,
+				E93102C521B3E3E10071D7DF /* Assets.xcassets */,
+				E93102C721B3E3E10071D7DF /* LaunchScreen.storyboard */,
+				E93102CA21B3E3E10071D7DF /* Info.plist */,
+				E93102CB21B3E3E10071D7DF /* main.m */,
+			);
+			path = "媒体组合";
 			sourceTree = "<group>";
 		};
 		E931DEA021AED756002E8303 /* 读取和写入媒体 */ = {
@@ -404,6 +447,23 @@
 			productReference = B1DE7DCA2188AC71000A16EB /* AVAsset.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E93102B921B3E3E00071D7DF /* 媒体组合 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E93102CF21B3E3E10071D7DF /* Build configuration list for PBXNativeTarget "媒体组合" */;
+			buildPhases = (
+				E93102B621B3E3E00071D7DF /* Sources */,
+				E93102B721B3E3E00071D7DF /* Frameworks */,
+				E93102B821B3E3E00071D7DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "媒体组合";
+			productName = "媒体组合";
+			productReference = E93102BA21B3E3E00071D7DF /* 媒体组合.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E931DE9E21AED756002E8303 /* 读取和写入媒体 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E931DEB421AED758002E8303 /* Build configuration list for PBXNativeTarget "读取和写入媒体" */;
@@ -445,6 +505,9 @@
 					B1DE7DC92188AC71000A16EB = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					E93102B921B3E3E00071D7DF = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					E931DE9E21AED756002E8303 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -469,6 +532,7 @@
 				041A8DBD219924E6005FDD2A /* AVPlayer */,
 				049C91D8219A842500274BC2 /* AVCaptureDevice */,
 				E931DE9E21AED756002E8303 /* 读取和写入媒体 */,
+				E93102B921B3E3E00071D7DF /* 媒体组合 */,
 			);
 		};
 /* End PBXProject section */
@@ -527,6 +591,18 @@
 				B1DE7DD92188AC72000A16EB /* LaunchScreen.storyboard in Resources */,
 				B1DE7DD62188AC72000A16EB /* Assets.xcassets in Resources */,
 				B1DE7DD42188AC71000A16EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93102B821B3E3E00071D7DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93102D021B3E5010071D7DF /* awake.wav in Resources */,
+				E93102D121B3E5010071D7DF /* test.mov in Resources */,
+				E93102C921B3E3E10071D7DF /* LaunchScreen.storyboard in Resources */,
+				E93102C621B3E3E10071D7DF /* Assets.xcassets in Resources */,
+				E93102C421B3E3E00071D7DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +669,16 @@
 				B1DE7DD12188AC71000A16EB /* ViewController.m in Sources */,
 				B1DE7DDC2188AC72000A16EB /* main.m in Sources */,
 				B1DE7DCE2188AC71000A16EB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93102B621B3E3E00071D7DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93102C121B3E3E00071D7DF /* ViewController.m in Sources */,
+				E93102CC21B3E3E10071D7DF /* main.m in Sources */,
+				E93102BE21B3E3E00071D7DF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +772,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				B1DE7DD82188AC72000A16EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E93102C221B3E3E00071D7DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E93102C321B3E3E00071D7DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E93102C721B3E3E10071D7DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E93102C821B3E3E10071D7DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -993,6 +1095,40 @@
 			};
 			name = Release;
 		};
+		E93102CD21B3E3E10071D7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWZ8Q938XQ;
+				INFOPLIST_FILE = "媒体组合/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "smallLabel.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E93102CE21B3E3E10071D7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWZ8Q938XQ;
+				INFOPLIST_FILE = "媒体组合/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "smallLabel.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E931DEB221AED758002E8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1080,6 +1216,15 @@
 			buildConfigurations = (
 				B1DE7DDD2188AC72000A16EB /* Debug */,
 				B1DE7DDE2188AC72000A16EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E93102CF21B3E3E10071D7DF /* Build configuration list for PBXNativeTarget "媒体组合" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E93102CD21B3E3E10071D7DF /* Debug */,
+				E93102CE21B3E3E10071D7DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
